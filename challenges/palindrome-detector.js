@@ -21,10 +21,16 @@
 */
 
 // YOUR CODE HERE
-var Palindrome = [ "mom", "racecar", "stack", "Pull up if I pull up", "Amore, Roma", "A man, a plan a canal:Panama", "these", "will not", "work"];
+var mom = input;
 
 function isPalindrome(input) {
-  return (input.split('').reverse().join('') === input);
-};
+  var midpoint=parseInt(input.length/2);
+  for (var i=0; i<midpoint; i++) {
+    if (input[i] !== input[(input.length-1)-i]) {
+      return false;
+    }
+  }
+  return true;
+}
 
 isPalindrome();
