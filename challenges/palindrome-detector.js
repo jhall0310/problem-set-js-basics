@@ -21,7 +21,7 @@
 */
 
 // YOUR CODE HERE
-var mom = input;
+ 
 
 function isPalindrome(input) {
   var midpoint=parseInt(input.length/2);
@@ -33,4 +33,4 @@ function isPalindrome(input) {
   return true;
 }
 
-isPalindrome();
+isPalindrome("stackcats");
