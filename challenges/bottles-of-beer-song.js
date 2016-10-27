@@ -22,3 +22,14 @@
 */
 
 // YOUR CODE HERE
+function bottlesOfBeer(n) {
+  // Start looping at n (the max number) and count down
+  for (var i=n; i>0; i--) {
+    console.log(i + " bottles of beer on the wall,");
+    console.log(i + " bottles of beer!");
+    console.log("Take one down and pass it around,");
+    console.log((i-1) + " bottles of beer on the wall...");
+  }
+}
+
+bottlesOfBeer(5);
